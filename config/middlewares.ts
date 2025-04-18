@@ -28,7 +28,20 @@ export default [
       },
     },
   },
-  "strapi::cors",
+  {
+    name: "strapi::cors",
+    config: {
+      origin: "*",
+      headers: [
+        "Content-Type",
+        "Authorization",
+        "Cache-Control",
+        "X-Requested-With",
+        "Accept",
+        "Origin",
+      ],
+    },
+  },
   "strapi::poweredBy",
   "strapi::query",
   "strapi::body",
