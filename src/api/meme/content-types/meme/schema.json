@@ -4,29 +4,37 @@
   "info": {
     "singularName": "meme",
     "pluralName": "memes",
-    "displayName": "Meme"
+    "displayName": "Meme",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "text",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 100
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "likes": {
       "type": "integer",
       "required": false,
       "min": 0,
       "max": 99
+    },
+    "memeUrl": {
+      "type": "string",
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)",
+      "required": true
     }
   }
 }
