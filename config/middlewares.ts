@@ -39,6 +39,7 @@ export default [
         "X-Requested-With",
         "Accept",
         "Origin",
+        "Pragma",
       ],
     },
   },
