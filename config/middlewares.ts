@@ -40,6 +40,7 @@ export default [
         "Accept",
         "Origin",
         "Pragma",
+        "If-None-Match",
       ],
     },
   },
