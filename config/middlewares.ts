@@ -41,6 +41,8 @@ export default [
         "Origin",
         "Pragma",
         "If-None-Match",
+        "ETag",
+        "Expires",
       ],
     },
   },
